@@ -1,80 +1,163 @@
-<!-- In an html site, all your content goes inside the body -->
-<html>
-  <head>
-    <title>
-      this is a website
-    </title>
-  </head>
-  <body>
-    
-    <!-- An image -->
-    <img class="catrooper" src="https://octodex.github.com/images/pusheencat.png"/>
-    
-    <!-- The right side of the page -->
-    <div class="right_side">
-    
-      <!-- this is a divider section -->
-      <div class="my_top_section">
-        
-        <!-- This is a title -->
-        <h1>Kevin's Website about stuff, or something.</h1>
-        
-        <!-- This is a paragraph -->
-        <p>Let's think the unthinkable, let's do the undoable. Let us prepare to grapple with the ineffable itself, and see if we may not eff it after all.</p>
-        
-        <p>Please read through the source and the <span class="code">&lt;!-- comments --&gt;</span> will guide you:</p>
-      </div>
-      
-      
-      <!-- This is an unordered list -->
-      <p>My favorite things</p>
-      <ul>
-        <li>Inefficient Robots</li>
-        <li>Out of tune guitars</li>
-        <li>Demi-permanent hair dye</li>
-      </ul>
-      
-      
-      <!-- This is an ordered list -->
-      <p class="ordered">My least favorite things</p>
-      <ol>
-        <li>Soggy sandwiches</li>
-        <li>Deflated tires</li>
-        <li>Fully cooked pizza</li>
-      </ol>
-      
-      <p class="informal">Web Things</p>
-      <ul class="informal">
-        <li>
-          Learning
-          
-          <ul>
-            <li><a href="https://developer.mozilla.org">Mozilla Web Basics</a></li>
-            <li><a href="https://www.w3schools.com/">W3C Schools</a></li>
-            <li><a href="http://www.codecademy.com/tracks/web">Codecademy Web Fundamentals</a></li>
-            <li><a href="https://api.jquery.com/">jQuery Javascript Reference</a></li>
-            <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-          </ul>
-          
-        </li>
-        <li>
-          Hosting
-          
-          <ul>
-            <li><a href="https://sites.google.com">Google Sites</a></li>
-            <li><a href="https://pages.github.com/">Github Pages</a></li>            
-          </ul>
-          
-        </li>
-      </ul>
-      
-      
-      <!-- A link, first to where it goes, then what text is displayed -->
-      <p class="unordered">
-        <a href="https://octodex.github.com/" target="_blank">Octocat Encyclopedia</a> 
-      </p>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - type</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
 
-    </div> <!-- End of right side -->
-    
-  </body>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div style="text-align: center;">Hey, monkey type is now live and available with even more awesome features! Check out the <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/gk9pp8/monkeytypecom_is_now_available_the_new/?">reddit post</a> for more details.<br><br><a href="https://monkeytype.com/">www.monkeytype.com</a></div>
+<div id="commandLineWrapper" class="hidden">
+  <div id="commandLine">
+    <input type="text" class="input" placeholder="Command">
+    <div class="separator hidden"></div>
+    <div class="listTitle">Title</div>
+    <div class="suggestions">
+    </div>
+  </div>
+</div>
+<div id="timerWrapper">
+  <div id="timer"></div>
+</div>
+<div id="resultScreenshot" class="">
+  <div class="stats">
+    <div class="group">
+      <div class="top">wpm</div>
+      <div class="bottom">100</div>
+    </div>
+    <div class="group">
+      <div class="top">key</div>
+      <div class="bottom">100/2</div>
+    </div>
+    <div class="group">
+      <div class="top">acc</div>
+      <div class="bottom">100%</div>
+    </div>
+  </div>
+  <div class="logo">
+    <!--     <div class="top">monkey-see</div> -->
+    <div class="bottom">monkey-type.com</div>
+  </div>
+</div>
+<div id="centerContent" class="hidden">
+
+  <div id="middle">
+    <div id="top">
+      <div class="logo">
+        <div class="top">monkey-see</div>
+        <div class="bottom">monkey-type</sup></div>
+      </div>
+      <div id="menu">
+        <div class="button" tabindex="2">
+          <div class="icon">
+            <i class="fas fa-fw fa-keyboard"></i>
+          </div>
+          <div class="text">
+            Test
+          </div>
+        </div>
+        <div class="button" tabindex="2">
+          <div class="icon">
+            <i class="fas fa-fw fa-info"></i>
+          </div>
+          <div class="text">
+            About
+          </div>
+        </div>
+        <div class="button" tabindex="2">
+          <div class="icon">
+            <i class="fas fa-fw fa-cog"></i>
+          </div>
+          <div class="text">
+            Settings
+          </div>
+        </div>
+        <div class="button" tabindex="2">
+          <div class="icon">
+            <i class="fas fa-fw fa-user"></i>
+          </div>
+          <div class="text">
+            Login
+          </div>
+        </div>
+      </div>
+
+      <div class="result hidden">
+        <div class="group testmode" style="align-self: center">
+          <div class="title mode1">words</div>
+          <div class="title mode2">100</div>
+          <div class="title mode3">100</div>
+        </div>
+        <div class="group key">
+          <div class="title">key</div>
+          <div class="val">100/1</div>
+        </div>
+        <div class="group acc">
+          <div class="title">acc</div>
+          <div class="val">95%</div>
+        </div>
+        <div class="group wpm">
+          <div class="title">wpm</div>
+          <div class="val">100</div>
+        </div>
+      </div>
+      <div class="config">
+        <div class="group punctuationMode">
+          <div class="buttons">
+            <div class="button toggleButton active" tabindex="2">punctuation</div>
+          </div>
+        </div>
+        <div class="group mode">
+          <div class="buttons">
+            <div class="button" mode="time">time</div>
+            <div class="button active" mode="words">words</div>
+            <div class="button" mode="custom">custom</div>
+          </div>
+        </div>
+        <div class="group wordCount">
+          <div class="buttons">
+            <div class="button" wordCount="10">10</div>
+            <div class="button" wordCount="25">25</div>
+            <div class="button active" wordCount="50">50</div>
+            <div class="button" wordCount="100">100</div>
+            <div class="button" wordCount="200">200</div>
+          </div>
+        </div>
+        <div class="group time hidden">
+          <div class="buttons">
+            <div class="button" timeConfig="15">15</div>
+            <div class="button active" timeConfig="30">30</div>
+            <div class="button" timeConfig="60">60</div>
+            <div class="button" timeConfig="120">120</div>
+          </div>
+        </div>
+        <div class="group customText hidden">
+          <div class="buttons">
+            <div class="button">change</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div id="caret" class="hidden"></div>
+    <div id="words" class=""></div>
+    <input id="wordsInput" class="" tabindex="0"></input>
+    <div id="restartTestButton" tabindex="0"><i class="fas fa-redo-alt"></i></div>
+    <div id="liveWpm" class="">-</div>
+  </div>
+  <div id="bottom">
+    <!--     Hey, im optimising the website for keyboard only use, so from now to restart the test press <key>tab</key> and then <key>enter</key> / <key>space</key> (also so its simmilar to other typing tests). If some of you really like this quick test restart I guess I could add a setting for it :P
+    <br><br> -->
+    Created by <a href="https://www.reddit.com/message/compose?to=Miodec">Miodec</a>
+  </div>
+
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js'></script><script  src="./script.js"></script>
+
+</body>
 </html>
